@@ -22,14 +22,16 @@ OrangeHRM-Test-Automation/
 │   ├── login_page.py
 │   └── leave_page.py
 ├── TestCases/
+│   ├── Reports/
+│   ├── Screenshots/
 │   ├── conftest.py
 │   ├── test_title.py
 │   ├── test_login.py
 │   ├── test_leave.py
 │   └── test_logout.py
-├── Reports/
 ├── Screenshots/
-└── pytest.ini
+├── pytest.ini
+└── requirements.txt
 ```
 
 ## Features
@@ -96,6 +98,19 @@ PASSWORD = "admin123"
 - HTML reports are generated in the `Reports` directory
 - Screenshots are captured automatically on test failures in the `Screenshots` directory
 
+## Key Components
+
+### Page Objects
+- **login_page.py**: Login page actions and elements
+- **dashboard_page.py**: Dashboard page actions and elements
+- **leave_page.py**: Leave page actions and elements
+
+### Test Cases
+- **test_title.py**: Tests for verifying page titles
+- **test_login.py**: Tests for login functionality
+- **test_leave.py**: Tests for leave page functionality
+- **test_logout.py**: Tests for logout functionality
+
 ## Contributing
 
 1. Fork the repository
@@ -113,3 +128,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Selenium](https://www.selenium.dev/)
 - [pytest](https://docs.pytest.org/)
 - [OrangeHRM](https://opensource-demo.orangehrmlive.com/)
+
